@@ -12,12 +12,17 @@ A productivity application that helps professionals set and track their yearly g
 - **Performance Analysis**: Get AI-generated feedback on goal progress
 - **Responsive Design**: Clean, minimal UI that adapts to different screen sizes
 
-## Technology Stack
+## Tech Stack
 
 - **Frontend**: Streamlit for a sleek and minimal UI
 - **Backend**: Gibson AI for database management
-- **AI Integration**: OpenAI API (o3-mini-2025-01-31 model)
 - **Database**: MySQL (hosted via Gibson AI)
+- **AI Integration**: 
+  - OpenAI API (o3-mini-2025-01-31 model) for goal suggestions and feedback
+  - Built with Windsurf using Claude Sonnet 3.7 model
+- **Integration**: Gibson AI MCP server for database operations
+
+**Note:** This app requires a valid OpenAI API key to function properly.
 
 ## Project Structure
 
@@ -53,6 +58,11 @@ A productivity application that helps professionals set and track their yearly g
 
 ## Getting Started
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the application: `streamlit run app.py`
-3. Access the app at http://localhost:8501
+1. Create a file named `openaikey.txt` in the root folder that contains a valid OpenAI API key
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the application: `streamlit run app.py`
+4. Access the app at http://localhost:8501
+
+## Author
+
+Created by Pavel Doronin under MIT License.
